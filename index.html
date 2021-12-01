@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- icon -->
+    <!-- fontawesome icon -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -33,22 +33,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container text-center p-4">
-      <h1 class="heading p-2 m-2">to do list</h1>
-      <form id="form">
-        <input type="text" name="name" id="myInput" autocomplete="off" />
+    <section class="container  p-4">
+      <h1 class="text-center p-2 m-2">to do list 📑</h1>
+      <form id="form" class="text-center">
+        <input type="text" name="name" id="myInput" autocomplete="off" placeholder="✍ here to add item " />
         <button id="addItem"><i class="fas fa-plus-circle fa-3x"></i></button>
       </form>
 
-      <h2 class="p-2">Need to do</h2>
-      <ul id="theList" class="text-center shadow rounded p-4">
-        <li>
+      <h2 class="p-2 text-center">🙇‍♀️ Need to do </h2>
+      <ul id="theList" class="shadow rounded p-5">
+        <li class="shadow rounded">
           Buy Coffee (Default value) <button class="btn" onclick="deleteItem(this)">
             <i class="fas fa-trash-alt m-2"></i>
           </button>
         </li>
       </ul>
     </section>
+    <!-- adding script file -->
     <script src="script.js"></script>
   </body>
 </html>

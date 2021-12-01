@@ -32,7 +32,9 @@ form{
    outline: none;
 }
 
-
+input:focus::placeholder {
+    color: transparent !important;
+  }
 #addItem{
     border: none;
     border-radius: 40%;
@@ -45,33 +47,74 @@ form{
 
 
 ul{
-    list-style: none;
+    /* list-style: none; */list-style-type: upper-roman-;
     background-color: #EDE682;
     max-width: 50%;
     margin: auto;
 }
 
 ul li{
-    /* border: 1px solid; */
-    padding: 3px;
+    padding: 10px 10px;
     max-width: 100%;
     border-radius: 10px;
     margin: auto;
-    background-color: #FFB344 ;
+    background-color: cornsilk ;
+    border-bottom:5px solid #FFB344;
+    border-right: 5px solid #FFB344;;
     margin :17px 0 !important;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: 'Merriweather', serif;   
 }
+
+ul li:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform ease-in 0.10s;
+}
+
 ul li button{
   
     margin-left: 30%;
     color: aliceblue;
 }
 .fa-trash-alt{
-    color: aliceblue;
+    color: brown;
   
 }
 .fa-trash-alt:hover{
     color: #E05D5D;
+}
+
+@media(max-width:1195px)
+{
+    ul li button{
+  
+        margin-left:0%;
+        
+    }
+}
+
+
+@media(max-width:970px)
+{
+    #myInput{
+
+       width: 60% !important;
+    
+    }
+     
+    ul{
+    
+        max-width: 80%;
+     
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    ul li button{
+  
+        margin-left:0%;
+        
+    }
 }

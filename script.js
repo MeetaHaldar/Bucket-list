@@ -5,7 +5,6 @@ let btn =document.getElementById("addItem");
 
 btn.disabled = true;
 
-
 input.addEventListener("change", stateHandle);
 
 function stateHandle() {
@@ -18,9 +17,6 @@ function stateHandle() {
     }
 }
 
-
-
-
 form.addEventListener("submit", (e)=>{
     e.preventDefault()
     createItem(myInput.value);
@@ -28,7 +24,7 @@ form.addEventListener("submit", (e)=>{
 )
 function createItem(x)
 {
-    let outHTML =`<li>${x}  <button class="btn" onclick ="deleteItem(this)"> <i class="fas fa-trash-alt m-2"></i> </button></li>`;
+    let outHTML =`<li class="shadow rounded">${x}  <button class="btn" onclick ="deleteItem(this)"> <i class="fas fa-trash-alt m-2"></i> </button></li>`;
     theList.insertAdjacentHTML("beforeend",outHTML);
     myInput.value='';
     myInput.focus()
@@ -40,3 +36,7 @@ function deleteItem(y){
 y.parentElement.remove();
 
 }
+// function cutit(y)
+// {
+//     y.parentElement.style.  
+// }
