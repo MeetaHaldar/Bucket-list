@@ -1,0 +1,77 @@
+h1{
+    color: #E05D5D;
+    font-family: 'Pacifico', cursive;
+   
+}
+h2{
+    color: #E05D5D;
+    margin-top: 10px;
+ font-family: 'Space Grotesk', sans-serif;
+ font-family: 'Pacifico', cursive;
+}
+body{
+    background-image: linear-gradient(to right, #fff8e5, #fff4d5, #fff0c5, #ffebb6, #ffe7a6);
+  
+}
+
+/* section{
+    background-color: rgb(252, 102, 102,0.7);
+   
+} */
+form{
+    background-image: linear-gradient(to right, #fff8e5, #fff4d5, #fff0c5, #ffebb6, #ffe7a6);
+        margin: auto;
+}
+
+#myInput{
+    border: 5px solid #00A19D !important;
+    border-radius: 10px;
+   width: 40% !important;
+   font-size: 1.3rem;
+   padding:2px 10px ;
+   outline: none;
+}
+
+
+#addItem{
+    border: none;
+    border-radius: 40%;
+    color: #00A19D;
+    cursor: pointer;
+    
+    
+}
+
+
+
+ul{
+    list-style: none;
+    background-color: #EDE682;
+    max-width: 50%;
+    margin: auto;
+}
+
+ul li{
+    /* border: 1px solid; */
+    padding: 3px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #FFB344 ;
+    margin :17px 0 !important;
+    color: #333;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;   
+}
+ul li button{
+  
+    margin-left: 30%;
+    color: aliceblue;
+}
+.fa-trash-alt{
+    color: aliceblue;
+  
+}
+.fa-trash-alt:hover{
+    color: #E05D5D;
+}
